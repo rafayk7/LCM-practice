@@ -2,14 +2,14 @@
 
 ## This repository serves the purpose of comparing the [Lightweight Communications Marshalling](https://github.com/lcm-proj/lcm) (LCM) communications infrastructure vs CAN Bus
 
-### Instructins
+### Installation Instructions
 Before starting anything, run the following commands
 
 ```
 git submodule init
 git submodule update
 ```
-### Instructions - LCM
+### Installation Instructions - LCM
 #### This is for linux (I run Arch, it should work on Ubuntu/Debian also. For Mac, windows, or others, check the documentation [here](https://github.com/lcm-proj/lcm/blob/master/docs/content/build-instructions.md)
 
 Before getting started, make sure the LCM repository is checked out to `v1.4.0` (it should already be)
@@ -48,4 +48,14 @@ sudo echo "$LCM_INSTALL_DIR/python$PYTHON_VERSION/site-packages" > /usr/lib/pyth
 Additionally, you may need to configure pkgconfig to find lcm.pc
 `export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$LCM_LIBRARY_DIR/pkgconfig`
 
-### Instructions - CANBus
+### Installation Instructions - CANBus
+
+
+### Testing Instructions
+First, setup the python environment
+To do so, it's best practice to maybe create a virtual environment
+`python -m venv venv`
+To activate it... `. ./venv/bin/activate` -> If you use some other virtual environment tool, go ahead and use that one
+
+Now, in the directory with the `setup.py` file, run `pip install -e .`
+The package should now be `pip` install-able
