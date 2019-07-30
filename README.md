@@ -47,3 +47,5 @@ sudo echo "$LCM_INSTALL_DIR/python$PYTHON_VERSION/site-packages" > /usr/lib/pyth
 
 Additionally, you may need to configure pkgconfig to find lcm.pc
 `export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$LCM_LIBRARY_DIR/pkgconfig`
+
+### Instructions - CANBus
