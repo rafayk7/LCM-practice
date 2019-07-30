@@ -2,6 +2,13 @@
 
 ## This repository serves the purpose of comparing the [Lightweight Communications Marshalling](https://github.com/lcm-proj/lcm) (LCM) communications infrastructure vs CAN Bus
 
+### Instructins
+Before starting anything, run the following commands
+
+```
+git submodule init
+git submodule update
+```
 ### Instructions - LCM
 #### This is for linux (I run Arch, it should work on Ubuntu/Debian also. For Mac, windows, or others, check the documentation [here](https://github.com/lcm-proj/lcm/blob/master/docs/content/build-instructions.md)
 
