@@ -9,6 +9,14 @@ Before getting started, make sure the LCM repository is checked out to `v1.4.0` 
 To check this, run `git branch` -> you should see something like `(HEAD detached at v1.4.0)`
 If not, run `git checkout v1.4.0`
 
+The following packages are required:
+- build-essential
+- libglib2.0-dev
+
+The following packages are strongly recommended:
+- default-jdk (or openjdk-9-jdk)
+- python-dev
+
 Run the following commands
 
 ```
