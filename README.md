@@ -64,4 +64,4 @@ LCM message types are created by first defining a `*message*.lcm` file that foll
 
 To generate the proper bindings for python, run `lcm-gen -p test_message.lcm` as defined [here](https://lcm-proj.github.io/tut_lcmgen.html)
 
-Then, to run the lcm test, just run `python -m lcm_vs_canbus.send_and_receive` and watch the output!
+Then, to run the lcm test, just run `python -m lcm_vs_canbus.lcm_send_and_receive` and watch the output!
