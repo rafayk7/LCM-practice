@@ -59,3 +59,9 @@ To activate it... `. ./venv/bin/activate` -> If you use some other virtual envir
 
 Now, in the directory with the `setup.py` file, run `pip install -e .`
 The package should now be `pip` install-able
+
+LCM message types are created by first defining a `*message*.lcm` file that follows the format define [here](https://lcm-proj.github.io/type_specification.html)
+
+To generate the proper bindings for python, run `lcm-gen -p test_message.lcm` as defined [here](https://lcm-proj.github.io/tut_lcmgen.html)
+
+Then, to run the lcm test, just run `python -m lcm_vs_canbus.send_and_receive` and watch the output!
