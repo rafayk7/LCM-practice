@@ -48,9 +48,6 @@ sudo echo "$LCM_INSTALL_DIR/python$PYTHON_VERSION/site-packages" > /usr/lib/pyth
 Additionally, you may need to configure pkgconfig to find lcm.pc
 `export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:$LCM_LIBRARY_DIR/pkgconfig`
 
-### Installation Instructions - CANBus
-
-
 ### Testing Instructions
 First, setup the python environment
 To do so, it's best practice to maybe create a virtual environment
@@ -64,4 +61,4 @@ LCM message types are created by first defining a `*message*.lcm` file that foll
 
 To generate the proper bindings for python, run `lcm-gen -p test_message.lcm` as defined [here](https://lcm-proj.github.io/tut_lcmgen.html)
 
-Then, to run the lcm test, just run `python -m lcm_vs_canbus.lcm_send_and_receive` and watch the output! (You might need to run this command in `src/lcm_vs_canbus`, but you shouldn't have to)
+Then, to run the lcm test, just run `python -m lcm_practice.lcm_send_and_receive` and watch the output! (You might need to run this command in `src/lcm_practice`, but you shouldn't have to)
