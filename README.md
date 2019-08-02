@@ -1,6 +1,6 @@
-# LCM-vs-CANBus
+# LCM-practice
 
-## This repository serves the purpose of comparing the [Lightweight Communications Marshalling](https://github.com/lcm-proj/lcm) (LCM) communications infrastructure vs CAN Bus
+## This repository serves the purpose of practicing the [Lightweight Communications Marshalling](https://github.com/lcm-proj/lcm) (LCM) library
 
 ### Installation Instructions
 Before starting anything, run the following commands
