@@ -2,13 +2,13 @@ from setuptools import setup
 from glob import glob
 
 setup(
-    name='LCM-vs-CANBus',
+    name='LCM-practice',
     use_scm_version=True,
-    packages=['lcm_vs_canbus'],
+    packages=['lcm_practice'],
     package_dir={'': 'src'},
     include_package_data=True,
     zip_safe=False,
-    url='https://github.com/UTHT/LCM-vs-CANBus.git',
+    url='https://github.com/UTHT/LCM-practice.git',
     python_requires='~=3.7',
     install_requires=[
     ],
