@@ -61,4 +61,4 @@ LCM message types are created by first defining a `*message*.lcm` file that foll
 
 To generate the proper bindings for python, run `lcm-gen -p test_message.lcm` as defined [here](https://lcm-proj.github.io/tut_lcmgen.html)
 
-Then, to run the lcm test, just run `python -m lcm_practice.lcm_send_and_receive` and watch the output! (You might need to run this command in `src/lcm_practice`, but you shouldn't have to)
+Then, to run the lcm test, just run `python -m lcm_practice.send_and_receive` and watch the output! (You might need to run this command in `src/lcm_practice`, but you shouldn't have to)
