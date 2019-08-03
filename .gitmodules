@@ -1,9 +1,3 @@
 [submodule "lcm"]
 	path = lcm
 	url = https://github.com/lcm-proj/lcm.git
-[submodule "CAN_BUS_Shield"]
-	path = CAN_BUS_Shield
-	url = https://github.com/Seeed-Studio/CAN_BUS_Shield.git
-[submodule "can-utils"]
-	path = can-utils
-	url = https://github.com/linux-can/can-utils.git
