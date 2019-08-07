@@ -5,17 +5,17 @@ import time
 
 import lcm
 
-from .test_message import test_message
-
+from test_message import test_message
+from new_test_message import new_test_message
 
 def sender():
     counter = 0
     while True:
-        message = test_message()
-        message.utime = counter
+        message = new_test_message()
+        message.coord_x = counter
         counter += 1
-        message.speed = 0.1 * counter
-        message.direction = 'forward'
+        message.coord_y = 0.1 * counter
+        message.coord_z = 0.2 * counter
 
         _lcm = lcm.LCM()
         _lcm.publish("TEST_MESSAGE", message.encode())
@@ -24,11 +24,11 @@ def sender():
 
 
 def listener(channel, data):
-    message = test_message.decode(data)
+    message = new_test_message.decode(data)
     print(f"\nReceived test_message on {channel}")
-    print(f"    {message.utime}")
-    print(f"    {message.speed}")
-    print(f"    {message.direction}")
+    print(f"    {message.coord_x}")
+    print(f"    {message.coord_y}")
+    print(f"    {message.coord_z}")
 
 
 if __name__ == '__main__':

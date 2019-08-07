@@ -1,0 +1,6 @@
+struct new_test_message
+{
+    double coord_x;
+    double coord_y;
+    double coord_z;
+}
